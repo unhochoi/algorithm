@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#define MAX 14
 using namespace std;
 
 // 입력
@@ -10,7 +10,7 @@ int n;
 int cnt = 0;
 
 // queen의 위치를 저장할 배열의 길이를 maximum 으로 정적 할당
-int queen_loc[14];
+int queen_loc[MAX];
 
 // 해당 행, 열 위치가 퀸의 위치로 가능한지 확인
 int possible_loc(int row){
@@ -35,10 +35,13 @@ void nqueen(int row){
     }
     // 모든 경우의 수를 찾지 못한 경우
     else{
+        
         // 현재 행에서 모든 열 검사
         for (int col=0; col<n; ++col){       
+            
             // 행 위치에 열 값을 할당
             queen_loc[row] = col;
+            
             // 현재 행, 열 위치가 퀸의 위치로 문제 없다면, 다음 행 검사
             if (possible_loc(row)){
                 nqueen(row + 1);
