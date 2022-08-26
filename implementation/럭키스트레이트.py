@@ -1,3 +1,5 @@
+# https://www.acmicpc.net/problem/18406
+
 import sys
 
 n = sys.stdin.readline().rstrip()
