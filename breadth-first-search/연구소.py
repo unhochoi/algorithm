@@ -1,3 +1,5 @@
+# BOJ에서는 [언어]를 PyPy3로 설정하여 제출해주세요.
+
 import sys
 from itertools import combinations
 from collections import deque
