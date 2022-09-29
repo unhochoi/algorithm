@@ -12,9 +12,9 @@ def union(parent, x, y):
     a = find(parent, x)
     b = find(parent, y)
     if (a < b):
-        parent[y] = x
+        parent[b] = a
     else:
-        parent[x] = y
+        parent[a] = b
 
 # 여행지의 수 n과 여행 계획에 속한 도시의 수 m
 n, m = map(int, sys.stdin.readline().split())
