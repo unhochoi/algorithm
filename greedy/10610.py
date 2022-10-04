@@ -13,7 +13,6 @@ for num in n:
     # 0이 존재한다면
     if (int(num) == 0):
         zero = True
-    
     # 각 자릿수를 더하기
     sum += int(num)
 
