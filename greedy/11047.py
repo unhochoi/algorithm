@@ -24,6 +24,3 @@ for i in range(n-1, -1, -1):
 
 # 동전의 개수 출력
 print(count)
-
-
-
